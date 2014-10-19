@@ -35,8 +35,6 @@ gem 'spring',        group: :development
 # Use Capistrano for deployment
 gem 'capistrano-rails', group: :development
 
-gem 'capistrano3-nginx', '~> 2.0'
-
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
