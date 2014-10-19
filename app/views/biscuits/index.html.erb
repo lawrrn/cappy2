@@ -1,0 +1,27 @@
+<h1>Listing biscuits</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @biscuits.each do |biscuit| %>
+      <tr>
+        <td><%= biscuit.name %></td>
+        <td><%= biscuit.content %></td>
+        <td><%= link_to 'Show', biscuit %></td>
+        <td><%= link_to 'Edit', edit_biscuit_path(biscuit) %></td>
+        <td><%= link_to 'Destroy', biscuit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Biscuit', new_biscuit_path %>

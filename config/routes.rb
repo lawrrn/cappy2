@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :biscuits
+
   resources :locations
 
   resources :categories
