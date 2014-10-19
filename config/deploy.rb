@@ -8,7 +8,7 @@ set :repo_url, 'https://github.com/lawrrn/cappy2.git'
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
 # Default deploy_to directory is /var/www/my_app
-set :deploy_to, '/var/www/cappy2'
+set :deploy_to, '/home/asyn/cappy2'
 
 # Default value for :scm is :git
 set :scm, :git

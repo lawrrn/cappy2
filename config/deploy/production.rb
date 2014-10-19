@@ -27,11 +27,13 @@ server '104.131.145.103', user: 'asyn', roles: %w{web}
 # Global options
 # --------------
 
- set :ssh_options, {
-   keys: %w(~/.ssh/id_rsa),
+set :ssh_options, {
    forward_agent: true,
-   auth_methods: %w(password)
- }
+ #   auth_methods: %w(password),
+   user: 'asyn'
+ #   password: 'ayesian'
+
+}
 
 #  set :ssh_options, {
 #    keys: %w(/home/rlisowski/.ssh/id_rsa),
