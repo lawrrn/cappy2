@@ -7,6 +7,9 @@ require 'capistrano/deploy'
 ### added this
 require 'capistrano/rails'
 
+### cap production deploy:restart
+require 'capistrano/passenger' 
+
 # Includes tasks from other gems included in your Gemfile
 #
 # For documentation on these, see for example:
