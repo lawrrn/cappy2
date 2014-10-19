@@ -1,0 +1,27 @@
+<h1>Listing kaycies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kaycies.each do |kaycy| %>
+      <tr>
+        <td><%= kaycy.name %></td>
+        <td><%= kaycy.content %></td>
+        <td><%= link_to 'Show', kaycy %></td>
+        <td><%= link_to 'Edit', edit_kaycy_path(kaycy) %></td>
+        <td><%= link_to 'Destroy', kaycy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kaycie', new_kaycy_path %>
